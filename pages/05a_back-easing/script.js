@@ -6,10 +6,12 @@ const indicator = document.querySelector(".indicator");
 const updateIndicator = (target) => {
   const rowBounds = tabRow.getBoundingClientRect();
   const targetBounds = target.getBoundingClientRect();
+  console.log(targetBounds.left);
+  console.log(rowBounds.left);
 
   const offset = Number(targetBounds.left) - rowBounds.left;
   const width = targetBounds.width;
-  console.log(targetBounds.width);
+
   gsap.to(indicator, {
     x: offset,
     width,
