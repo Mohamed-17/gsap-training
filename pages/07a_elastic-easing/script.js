@@ -38,17 +38,14 @@ function renderChart() {
     const barHeight = (item.value / maxValue) * (chartHeight - 60);
     bar.style.height = `${barHeight}px`;
 
-    // Create the label under the bar
     const label = document.createElement("div");
     label.className = "label";
     label.textContent = item.label;
 
-    // Assemble the components
     wrapper.appendChild(bar);
     wrapper.appendChild(label);
     chart.appendChild(wrapper);
 
-    // 👇 This is where GSAP animation will go later
     gsap.to(bar, {
       scaleY: 1,
       duration: 2,
