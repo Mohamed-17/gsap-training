@@ -18,8 +18,8 @@
   justify-content: center;
   font-size: 1.2rem;
   font-weight: bold;
-  transform: scale(1);
-  opacity: 1;
+  /* transform: scale(1); */
+  /* opacity: 1; */
 }
 
 .card-1 {
